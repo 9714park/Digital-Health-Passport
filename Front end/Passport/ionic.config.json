@@ -1,0 +1,7 @@
+{
+  "name": "Passport",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
