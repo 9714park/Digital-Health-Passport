@@ -1,1 +1,1 @@
-# Digital-Health-Passport
+# Digital Health Passport
