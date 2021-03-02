@@ -30,3 +30,8 @@ spring:
         order_inserts: true
         order_updates: true
 
+app:
+  jwtSecret: scrumlords
+  jwtExpirationMs: 2592000
+  aesSecret: hackathonDHP
+
