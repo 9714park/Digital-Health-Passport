@@ -4,13 +4,25 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./passport/passport.module').then(m => m.PassportPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
+  {
+    path: 'covid-test',
+    loadChildren: () => import('./covid-test/covid-test.module').then(m => m.CovidTestPageModule)
+  },
+  {
+    path: 'vaccine-history',
+    loadChildren: () => import('./vaccine-history/vaccine-history.module').then(m => m.VaccineHistoryPageModule)
+  },
+  {
+    path: 'passport',
+    loadChildren: () => import('./passport/passport.module').then(m => m.PassportPageModule)
+  }
 ];
 
 @NgModule({

@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Digital Health Passport
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <h1 class="ion-text-center">Covid Test</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="circle">
+        <div class="circle-text">
+          <ion-text color="success">Negative</ion-text><br />
+          02-21-2020
+        </div>
+      </div><br />
+      <ion-grid>
+        <ion-row>
+          <h2>History</h2>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="success"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">Negative</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">02-21-2021</ion-col>
+        </ion-row>
+        <hr color="#f4f5f8" />
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="success"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">Negative</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">12-30-2020</ion-col>
+        </ion-row>
+        <hr color="#f4f5f8" />
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="danger"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">Positive</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">09-01-2020</ion-col>
+        </ion-row>
+        <hr color="#f4f5f8" />
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="success"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">Negative</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">07-11-2020</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/covid-test">
+        <ion-icon name="test"></ion-icon>
+        <ion-label>Covid Test</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/vaccine-history">
+        <ion-icon name="injection"></ion-icon>
+        <ion-label>Vaccine History</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/passport">
+        <ion-icon name="passport"></ion-icon>
+        <ion-label>Passport</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-icon name="exit"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

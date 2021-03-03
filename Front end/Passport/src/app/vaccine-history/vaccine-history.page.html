@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Digital Health Passport
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <h1 class="ion-text-center">Vaccine History</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Result</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Location</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Date</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">
+            <ion-text color="success">Vaccinated</ion-text>
+          </ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">02-21-2021</ion-col>
+        </ion-row><br />
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Registration Number</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+        </ion-row><br />
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Vaccine Number</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Vaccine Type</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+          <ion-col class="ion-no-padding">Pfizer</ion-col>
+        </ion-row><br /><br />
+        <ion-row>
+          <h2>History</h2>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="success"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">02-21-2021</ion-col>
+        </ion-row>
+        <hr color="#f4f5f8" />
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="warning"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">NB1238900-BP</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">01-21-2021</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/covid-test">
+        <ion-icon name="test"></ion-icon>
+        <ion-label>Covid Test</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/vaccine-history">
+        <ion-icon name="injection"></ion-icon>
+        <ion-label>Vaccine History</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/passport">
+        <ion-icon name="passport"></ion-icon>
+        <ion-label>Passport</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-icon name="exit"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

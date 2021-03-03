@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Digital Health Passport
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <h1 class="ion-text-center">Passport</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <strong>Passport Number</strong><br />
+      NA1234890-YP<br /><br />
+      <strong>Name</strong><br />
+      John Doe<br /><br />
+      <strong>Date of Birth</strong><br />
+      March 2, 2000<br /><br />
+      <strong>Gender</strong><br />
+      Male<br />
+      <ion-slides pager="true">
+        <ion-slide>
+          <ion-img class="screenshot" src="../../assets/undraw_profile_pic_ic5t.svg"></ion-img>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-img class="screenshot" src="../../assets/qr-code.svg.png"></ion-img>
+        </ion-slide>
+      </ion-slides>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
+
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/covid-test">
+        <ion-icon name="test"></ion-icon>
+        <ion-label>Covid Test</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/vaccine-history">
+        <ion-icon name="injection"></ion-icon>
+        <ion-label>Vaccine History</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/passport">
+        <ion-icon name="passport"></ion-icon>
+        <ion-label>Passport</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-icon name="exit"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>
