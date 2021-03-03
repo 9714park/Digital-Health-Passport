@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-title>
-      Digital Health Passport
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,6 +13,8 @@
     </ion-card-header>
 
     <ion-card-content>
+      <ion-button color="success" shape="round" expand="block" routerLink="/covid-register">Add Covid Test +
+      </ion-button><br /><br />
       <div class="circle">
         <div class="circle-text">
           <ion-text color="success">Negative</ion-text><br />
@@ -64,26 +65,3 @@
 
   </ion-card>
 </ion-content>
-
-<ion-toolbar>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button routerLink="/covid-test">
-        <ion-icon name="test"></ion-icon>
-        <ion-label>Covid Test</ion-label>
-      </ion-tab-button>
-      <ion-tab-button routerLink="/vaccine-history">
-        <ion-icon name="injection"></ion-icon>
-        <ion-label>Vaccine History</ion-label>
-      </ion-tab-button>
-      <ion-tab-button routerLink="/passport">
-        <ion-icon name="passport"></ion-icon>
-        <ion-label>Passport</ion-label>
-      </ion-tab-button>
-      <ion-tab-button>
-        <ion-icon name="exit"></ion-icon>
-        <ion-label>Logout</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-</ion-toolbar>

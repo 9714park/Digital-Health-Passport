@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'passport',
     loadChildren: () => import('./passport/passport.module').then(m => m.PassportPageModule)
+  },  {
+    path: 'covid-register',
+    loadChildren: () => import('./covid-register/covid-register.module').then( m => m.CovidRegisterPageModule)
+  },
+  {
+    path: 'vaccine-register',
+    loadChildren: () => import('./vaccine-register/vaccine-register.module').then( m => m.VaccineRegisterPageModule)
   }
+
 ];
 
 @NgModule({
