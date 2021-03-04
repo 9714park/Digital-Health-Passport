@@ -4,7 +4,23 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./passport/passport.module').then(m => m.PassportPageModule)
+  },
+  {
+    path: 'covid-test',
+    loadChildren: () => import('./covid-test/covid-test.module').then(m => m.CovidTestPageModule)
+  },
+  {
+    path: 'vaccine-history',
+    loadChildren: () => import('./vaccine-history/vaccine-history.module').then(m => m.VaccineHistoryPageModule)
+  },
+  {
+    path: 'passport',
+    loadChildren: () => import('./passport/passport.module').then(m => m.PassportPageModule)
+  },
+  {
+    path: 'covid-register',
+    loadChildren: () => import('./covid-register/covid-register.module').then( m => m.CovidRegisterPageModule)
   },
   {
     path: '',
@@ -31,8 +47,10 @@ const routes: Routes = [
     path: 'id-upload',
     loadChildren: () => import('./id-upload/id-upload.module').then( m => m.IdUploadPageModule)
   },
-
-
+  {
+    path: 'vaccine-register',
+    loadChildren: () => import('./vaccine-register/vaccine-register.module').then( m => m.VaccineRegisterPageModule)
+  }
 
 ];
 
