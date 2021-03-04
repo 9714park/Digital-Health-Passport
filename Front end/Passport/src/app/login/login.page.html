@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title size="large" class="ion-text-center"> Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src="assets/Vaccine.jpg" />
+  </div>
+  <form id="form">
+    <ion-card>
+    <ion-item>
+      <ion-input placeholder="Email"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Password" [type]="showPassword  ? 'text': 'password'" ></ion-input>
+      <ion-icon slot="end" [name]="passwordToggleIcon" (click)="togglePassword()"></ion-icon>
+    </ion-item>
+  </ion-card>
+  </form>
+  <div id="buttons">
+  <ion-list style="text-align: center;">
+    <ion-router-link color="success" routerLink="/user-type">Sign Up</ion-router-link>
+    <ion-button color="success" expand="block" shape="round" routerLink="/home">Login</ion-button>
+    <ion-router-link color="success" routerLink="/login">Forgot Password?</ion-router-link>
+  </ion-list>
+  </div>
+</ion-content>

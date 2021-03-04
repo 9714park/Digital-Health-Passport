@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="large" class="ion-text-center">Sign Up</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" color="success" routerLink="/login">Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <p style="text-align: center;">Upload or take a picture</p>
+  <div id="buttons">
+    <ion-button  routerLink="" color="success" expand="block" shape="round">Take a picture</ion-button>
+    <ion-button color="success" expand="block" shape="round" (click)="addPhotoToGallery()">Upload a picture</ion-button>
+  </div>
+  <div id="seperator">
+    <ion-button  (click)="presentAlert()" color="success" expand="block" shape="round">Verify Picture</ion-button>
+  </div>
+  </ion-content>

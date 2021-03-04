@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title size="large" class="ion-text-center">Sign Up</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" color="success" routerLink="/login">Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+      <p style="text-align: center;">Select User Type</p>
+      <div id="buttons">
+        <ion-button  routerLink="/user-sign-up-name" color="success" expand="block" shape="round">User</ion-button>
+        <ion-button color="success" expand="block" shape="round">Institution</ion-button>
+      </div>
+</ion-content>
