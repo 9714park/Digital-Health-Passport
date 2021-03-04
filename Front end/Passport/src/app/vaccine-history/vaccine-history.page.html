@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-card-header>
+      <h1 class="ion-text-center">Vaccine History</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button color="success" shape="round" expand="block" routerLink="/vaccine-register">Add Vaccine Report +</ion-button>
+      <br /><br />
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Result</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Location</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Date</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">
+            <ion-text color="success">Vaccinated</ion-text>
+          </ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">02-21-2021</ion-col>
+        </ion-row><br />
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Registration No</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+        </ion-row><br />
+        <ion-row>
+          <ion-col class="ion-no-padding"><strong>Vaccine Number</strong></ion-col>
+          <ion-col class="ion-no-padding"><strong>Vaccine Type</strong></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+          <ion-col class="ion-no-padding">Pfizer</ion-col>
+        </ion-row><br /><br />
+        <ion-row>
+          <h2>History</h2>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="success"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">NA1243890-YP</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">02-21-2021</ion-col>
+        </ion-row>
+        <hr color="#f4f5f8" />
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <ion-icon name="ellipse" color="warning"></ion-icon>
+          </ion-col>
+          <ion-col class="ion-no-padding">NB1238900-BP</ion-col>
+          <ion-col class="ion-no-padding">Toronto, ON</ion-col>
+          <ion-col class="ion-no-padding">01-21-2021</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

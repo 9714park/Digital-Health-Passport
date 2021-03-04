@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-header [translucent]="true" *ngIf="authenticated">
+    <ion-toolbar color="success">
+      <ion-title>
+        Digital Health Passport
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tabs *ngIf="authenticated">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/covid-test">
+        <ion-icon name="test"></ion-icon>
+        <ion-label>Covid Test</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/vaccine-history">
+        <ion-icon name="injection"></ion-icon>
+        <ion-label>Vaccine History</ion-label>
+      </ion-tab-button>
+      <ion-tab-button routerLink="/passport">
+        <ion-icon name="passport"></ion-icon>
+        <ion-label>Passport</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        <ion-icon name="logout"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>
