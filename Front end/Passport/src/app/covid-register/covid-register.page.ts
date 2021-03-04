@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-covid-register',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CovidRegisterPage implements OnInit {
 
-  constructor() { }
+  constructor(public alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: '',
+      header: 'Error',
+      subHeader: '',
+      message: 'The registration number you have provided does not match the profile.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
 }
