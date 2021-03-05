@@ -1,6 +1,4 @@
 # Digital Health Passport
-
-# Digital Health Passport
 ### Mobile appliaction that allows users and institutions to access user information from the vaccine cloud through a QR code
 
 <p align="center">
@@ -33,5 +31,7 @@ A simple, safe and secure Digital Health Passport for institutions, organization
 ### Backend
 - Spring Boot
 - MySQL
+
+
 Icons made by <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a> and <a href="https://www.freepik.com" title="Freepik">Freepik</a>
 from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
