@@ -1,13 +1,15 @@
 # COVID Pass
-### Mobile application that allows users and institutions to access user information from the vaccine cloud through a QR code
+### Mobile application that provides a simple, safe and secure way to prove/verify a passholder’s COVID-19 health status​
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/25916322/110050180-6366b400-7d21-11eb-86f5-198544497a9f.png">
+</p>
+
 
 Overiew: https://youtu.be/l1zhKugpYe4       
 
 Demo: https://youtu.be/_QGhZS3vuMU
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/25916322/110050180-6366b400-7d21-11eb-86f5-198544497a9f.png">
-</p>
 
 ## Problem: ​
 
