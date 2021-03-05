@@ -2,7 +2,7 @@
 ### Mobile appliaction that allows users and institutions to access user information from the vaccine cloud through a QR code
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/25916322/110049296-9445e980-7d1f-11eb-866a-f4db2ae04ad0.png">
+  <img src="https://user-images.githubusercontent.com/25916322/110050180-6366b400-7d21-11eb-86f5-198544497a9f.png">
 </p>
 
 ## Problem: ​
